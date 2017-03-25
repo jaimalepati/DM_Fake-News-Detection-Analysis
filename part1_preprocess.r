@@ -110,6 +110,14 @@ ggplot(dataset, aes(x=spam_score)) + geom_histogram(aes(group=country, fill=coun
 
 ggplot(dataset, aes(x=spam_score)) + geom_histogram(aes(group=type, fill=type), alpha=.5)
 
+#Check the conditional density plot for spam-score over 0.5
+dataset2 = dataset[which(dataset$spam_score>=0.5),]
+ggplot(dataset2, aes(x=spam_score)) + geom_histogram(aes(group=language, fill=language), alpha=.5)
+ggplot(dataset2, aes(x=spam_score)) + geom_density(aes(group=language, fill=language), alpha=0.05)
+#ggplot(dataset, aes(x=spam_score)) + geom_histogram(aes(group=site_url, fill=site_url), alpha=.5)
+ggplot(dataset2, aes(x=spam_score)) + geom_density(aes(group=country, fill=country), alpha=.5)
+ggplot(dataset2, aes(x=spam_score)) + geom_density(aes(group=type, fill=type), alpha=.5)
+
 #For each categorical predictor, compare and 
 #describe whether the categories have significantly different means.
 language_comp = aov(spam_score ~ language, data = dataset) 
