@@ -10,7 +10,7 @@ dict.sites <- list("americannews.com","bigamericannews.com", "christwire.org", "
                    "www.cc.com/indecision", "msnbc.co", "msnbc.website", "mediamass.net", "nationalreport.net", 
                    "newsbiscuit.com", "news-hound.com", "newsmutiny.com", "politicalears.com", "private-eye.co.uk", 
                    "realnewsrightnow.com", "rilenews.com", "sprotspickle.com", "thenewsnerd.com", "theuspatriot.com", 
-                   "witscience.org")
+                   "witscience.org","24newsflash.com")
 
 
 dict.sites
